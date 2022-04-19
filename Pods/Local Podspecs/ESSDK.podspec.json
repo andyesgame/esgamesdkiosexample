@@ -1,0 +1,65 @@
+{
+  "name": "ESSDK",
+  "version": "2.1.1",
+  "summary": "A short description of ESSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/esgame",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "tnb107": "nguyenbathanhth@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/esgame/ESSDK.git",
+    "tag": "2.1.1"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "ESSDK/Classes/*",
+  "resource_bundles": {
+    "ESSDK": [
+      "ESSDK/Assets/*.png",
+      "ESSDK/Classes/*.xib",
+      "ESSDK/*.xib",
+      "ESSDK/*/*.xib",
+      "ESSDK/*.lproj",
+      "ESSDK/*.xcassets"
+    ]
+  },
+  "static_framework": true,
+  "dependencies": {
+    "SVProgressHUD": [
+
+    ],
+    "JSONModel": [
+
+    ],
+    "FBSDKCoreKit": [
+      "11.0.1"
+    ],
+    "FBSDKLoginKit": [
+      "11.0.1"
+    ],
+    "FBSDKShareKit": [
+      "11.0.1"
+    ],
+    "GoogleSignIn": [
+      "6.0.1"
+    ],
+    "AppsFlyerFramework": [
+      "6.5.4"
+    ],
+    "Firebase/Analytics": [
+      "8.1.1"
+    ],
+    "Firebase/Crashlytics": [
+      "8.1.1"
+    ],
+    "Firebase/Messaging": [
+      "8.1.1"
+    ]
+  }
+}
