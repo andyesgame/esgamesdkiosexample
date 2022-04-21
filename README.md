@@ -20,7 +20,6 @@ SDK provide some functionality below:
 - Sign-in with Apple
 - Log-in with Facebook
 - Log-in with Google
-- Google in-app billing
 - Apple in-app purchase
 - Third-party payment (should only use with non Google version)
 - Analystic ( Firebase, Facebook, Appslyer)
@@ -95,109 +94,78 @@ You need modify some attributes in Info.plist
 			</dict>
 		</array>
 
+# Coding
+## Init sdk:
+- ApplicationDelegate:
 
-# Intergration
+	    - (**BOOL**)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+		[ESGameSDK  application:application 		didFinishLaunchingWithOptions:launchOptions];
+			return  YES;
+		}
+		- (void)applicationDidBecomeActive:(UIApplication *)application{
+			[ESGameSDK  applicationDidBecomeActive:application];
+		}
+		- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+			return [ESGameSDK application:application openURL:url options:options];
+		}
+		- (**BOOL**)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(**id**)annotation{
+			return [ESGameSDK application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+		}
+- ViewController: 
+	Make Your view's controller implement SdkDelegate:
 
-- Copy esgameparameters.xml to your project
-- Merge proguard-rules.pro to your project.
-- Import google-service.json to your project.
-- Merge AndroidManifest.xml to your project.
-- Merge gradle.build to your project.
+		@import ESSDK;
+		@interface  ViewController : UIViewController<SdkDelegate>
+		@end
+	
+	init in viewDidLoad method:
 
-## Coding
-Init sdk:
+		- (void) viewDidLoad{
+			[super  viewDidLoad];
+			ESGameSDK *esgameSdk = [ESGameSDK sharedObject];
+			esgameSdk.delegate = self;
+			[esgameSdk init:self];
+		}	
 
-    protected void onCreate(Bundle var1) {  
-    this.requestWindowFeature(1);  
-	 super.onCreate(var1);  
-	 ...
-	 ESGameSDK.init(this, this);  
-	 ESGameSDK.getInstance().handleIntent(getIntent());  
-	 ...
-	}
-	@Override  
-	protected void onDestroy() {  
-    super.onDestroy();  
-	  ESGameSDK.getInstance().onDestroy();  
-	}  
-  
-	@Override  
-	protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {  
-    super.onActivityResult(requestCode, resultCode, data); 
-	ESGameSDK.getInstance().onActivityResult(requestCode, resultCode, data);  
-	}
+	Implement ESGame's callback:
 
-Implement ESGame's callback:
 
-> void onLoginSuccess(String message, int code, User user)
+- Login success callback
 
-Login success callback
-
+	  - (void)responseLogin:(BOOL)isSuccess :(nonnull NSString *)message :(NSInteger)errorCode :(nonnull User *)user 
 |Property               |Type                          |Description                         |
 |----------------|-------------------------------|-----------------------------|
+|isSuccess|Bool            |user login state (authorized or unauthorized)|
 |message|String            |message from server|
-|code|Integer            |response code from server|
+|errorCode|Integer            |response code from server|
 |user|User            |User information|
 
-> void onLoginFailure(String message, int code)
+- Log-out callback
+	
+		 -(void)responseLogout
 
-Log-in failure callback
+- Apple inapp-purchase  callback
+
+		-(**void**)paymentSuccess:(SKPaymentTransaction*)transaction
 |Property               |Type                          |Description                         |
 |----------------|-------------------------------|-----------------------------|
-|message|String            |message of error from server|
-|code|Integer            |error code from server|
-
-> void onLogout()
-
-Log-out callback
-
-> void onGGBillingResult(boolean success, String sku, String orderId)
-
-Google billing  callback
-|Property               |Type                          |Description                         |
-|----------------|-------------------------------|-----------------------------|
-|success|Boolean            |Transaction success or not|
-|sku|String            |product's identifier|
-|orderId|String            |Order's identifier|
-
-> void onWebBillingResult(String itemId, int price)
-
-Thirt-party payment  callback
-|Property               |Type                          |Description                         |
-|----------------|-------------------------------|-----------------------------|
-|itemId|String            |product's identifier|
-|price|Integer            |Product's price|
-
-> void onUserInfoChange(User user)
-
-User's information  callback
-|Property               |Type                          |Description                         |
-|----------------|-------------------------------|-----------------------------|
-|itemId|String            |product's identifier|
-|price|Integer            |Product's price|
+|transaction|SKPaymentTransaction            |Transaction's information|
 
 
 ## Command
 
 ESGame'SDK provide some methods:
-
-- ESGameSDK.getInstance().login()
+	- Log-in
+	
+	- (void)login:(UIViewController *)view
 ESGame will open Login view if user was not login in the past, or let user login.
-- ESGameSDK.getInstance().logout()
+	-Log-out
+	
+	-(void)logout
 Let user log-out.
-- ESGameSDK.getInstance().inAppBillingWithSkuType(productID, sku_type ,server_id, player_id,extra_data);
-Google billing payment method.
+	- In-app purchase
 
-|Property               |Type                          |Description                         |
-|----------------|-------------------------------|-----------------------------|
-|productID|String            |product's identifier|
-|sku_type|BillingClient.SkuType            |Product's type|
-|server_id|String            |Server' identifier|
-|player_id|String            |ESGame Player's identifier|
-|extra_data|String            |ESGame Transaction's information|
-
-- ESGameSDK.getInstance().inAppBillingWeb(productID ,server_id, player_id,extra_data);
-Web payment method.
+		- (void)buyProduct:(NSString *)productId :(NSString *)server_id :(NSString *)player_id :(NSString *)extraData :(UIViewController *)rootView
 
 |Property               |Type                          |Description                         |
 |----------------|-------------------------------|-----------------------------|
@@ -205,5 +173,7 @@ Web payment method.
 |server_id|String            |Server' identifier|
 |player_id|String            |ESGame Player's identifier|
 |extra_data|String            |ESGame Transaction's information|
-```
+|rootView|UIViewController            |root's view controller which sdk's will be display|
+
+
   
