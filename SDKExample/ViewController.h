@@ -9,7 +9,5 @@
 #import <UIKit/UIKit.h>
 @import ESSDK;
 @interface ViewController : UIViewController<SdkDelegate>
-
-
 @end
 

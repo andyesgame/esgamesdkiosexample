@@ -15,6 +15,8 @@
 		F5B6B587280E936F006B1462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B6B586280E936F006B1462 /* Assets.xcassets */; };
 		F5B6B58A280E936F006B1462 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B6B588280E936F006B1462 /* LaunchScreen.storyboard */; };
 		F5B6B58D280E936F006B1462 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B6B58C280E936F006B1462 /* main.m */; };
+		F5B6B595280EBA81006B1462 /* es_property.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5B6B593280EBA81006B1462 /* es_property.plist */; };
+		F5B6B596280EBA81006B1462 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5B6B594280EBA81006B1462 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		F5B6B589280E936F006B1462 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5B6B58B280E936F006B1462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5B6B58C280E936F006B1462 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5B6B593280EBA81006B1462 /* es_property.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = es_property.plist; path = SDKExample/es_property.plist; sourceTree = "<group>"; };
+		F5B6B594280EBA81006B1462 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "SDKExample/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF3BEB06AEAE0500F26049B4 /* Pods_SDKExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDKExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -61,13 +65,14 @@
 				B953F7CB65588527075C3A96 /* Pods-SDKExample.debug.xcconfig */,
 				7CD0BF4B515D06442596953B /* Pods-SDKExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		F5B6B56E280E936C006B1462 = {
 			isa = PBXGroup;
 			children = (
+				F5B6B593280EBA81006B1462 /* es_property.plist */,
+				F5B6B594280EBA81006B1462 /* GoogleService-Info.plist */,
 				F5B6B579280E936C006B1462 /* SDKExample */,
 				F5B6B578280E936C006B1462 /* Products */,
 				8D43C2FAF1785CFB78FDD0D3 /* Pods */,
@@ -163,7 +168,9 @@
 			files = (
 				F5B6B58A280E936F006B1462 /* LaunchScreen.storyboard in Resources */,
 				F5B6B587280E936F006B1462 /* Assets.xcassets in Resources */,
+				F5B6B596280EBA81006B1462 /* GoogleService-Info.plist in Resources */,
 				F5B6B585280E936C006B1462 /* Main.storyboard in Resources */,
+				F5B6B595280EBA81006B1462 /* es_property.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

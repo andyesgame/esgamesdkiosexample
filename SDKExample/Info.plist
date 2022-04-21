@@ -16,22 +16,22 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
+    <key>CFBundleVersion</key>
+    <string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb682118789108627</string>
-				<string>com.googleusercontent.apps.1034628364602-0sbkc4vbcrp2uj1cpedbfroj8f89vv51</string>
+				<string></string>
+				<string></string>
 			</array>
 		</dict>
 	</array>
-	<key>CFBundleVersion</key>
-	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>FacebookAdvertiserIDCollectionEnabled</key>
 	<true/>
 	<key>FacebookAppID</key>
-	<string>682118789108627</string>
+	<string></string>
 	<key>FacebookDisplayName</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>LSApplicationQueriesSchemes</key>

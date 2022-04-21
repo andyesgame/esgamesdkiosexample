@@ -36,13 +36,13 @@
   NSArray *products = [esgameSdk getListProductId];
   
   if ((int)[products count] > 0) {
-    
-    ProductItem *product = products[0];
+      
+      NSString *productId = @"1";
     NSString *serverId = @"1";
     NSString *playerId = @"123";
     NSString *extraData = @"";
     
-    [esgameSdk buyProduct:product.productId :serverId :playerId :extraData :self];
+    [esgameSdk buyProduct:productId :serverId :playerId :extraData :self];
   } else {
     NSLog(@"productId not found");
   }
