@@ -14,7 +14,6 @@
     ESGameSDK *esgameSdk = [ESGameSDK sharedObject];
   esgameSdk.delegate = self;
   [esgameSdk init:self];
-  
 }
 
 - (void)didReceiveMemoryWarning
