@@ -178,7 +178,7 @@ Let user log-out.
 
 - Send tracking analystic event:
 	
-		-(**void**) trackEvent : (NSString *) eventName :(NSDictionary *) data;
+		-(void) trackEvent : (NSString *) eventName :(NSDictionary *) data;
 
 |Property               |Type                          |Description                         |
 |----------------|-------------------------------|-----------------------------|
