@@ -10,7 +10,7 @@ This document demonstrades ESGame SDK for IOS.
 - Xcode
 - ESGame client id
 - ESGame client secret
-- Google service json file
+- GoogleService-Info.plist file
 - Facebook id and facebook client token
 - Appsflyer development key
 # Functionality
