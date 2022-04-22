@@ -1,5 +1,6 @@
 
 
+
 # ESGame IOS SDK !
 
 This document demonstrades ESGame SDK for IOS.
@@ -155,15 +156,15 @@ You need modify some attributes in Info.plist
 ## Command
 
 ESGame'SDK provide some methods:
-	- Log-in
+- Log-in
 	
 	- (void)login:(UIViewController *)view
 ESGame will open Login view if user was not login in the past, or let user login.
-	-Log-out
+- Log-out
 	
 	-(void)logout
 Let user log-out.
-	- In-app purchase
+- In-app purchase
 
 		- (void)buyProduct:(NSString *)productId :(NSString *)server_id :(NSString *)player_id :(NSString *)extraData :(UIViewController *)rootView
 
@@ -175,5 +176,13 @@ Let user log-out.
 |extra_data|String            |ESGame Transaction's information|
 |rootView|UIViewController            |root's view controller which sdk's will be display|
 
+- Send tracking analystic event:
+	
+		-(**void**) trackEvent : (NSString *) eventName :(NSDictionary *) data;
+
+|Property               |Type                          |Description                         |
+|----------------|-------------------------------|-----------------------------|
+|eventName|NSString            |event's name|
+|data|NSDictionary            |event's data|
 
   
