@@ -1,6 +1,7 @@
 
 
 
+
 # ESGame IOS SDK !
 
 This document demonstrades ESGame SDK for IOS.
@@ -14,6 +15,16 @@ This document demonstrades ESGame SDK for IOS.
 - GoogleService-Info.plist file
 - Facebook id and facebook client token
 - Appsflyer development key
+# Install
+- Download the lastest esgame sdk for ios (https://github.com/andyesgame/esgamesdkiosexample/releases) and extract to your computer
+- Link ESSDK to your pod file, like this:
+
+		pod 'ESSDK', :path => '../sdk/' 
+
+- Run :
+	
+	
+		pod install
 # Functionality
 SDK provide some functionality below:
 - ESGame normal login: use email/account and password
