@@ -28,6 +28,10 @@
 - (IBAction)btnLogout:(id)sender {
   ESGameSDK *esgameSdk = [ESGameSDK sharedObject];
   [esgameSdk logout];
+   /** [esgameSdk deleteAccount:^(bool ok) {
+        
+    }];
+    */
 }
 
 - (IBAction)btnBuyItem:(id)sender {
@@ -62,5 +66,11 @@
 -(void)paymentSuccess:(SKPaymentTransaction*)transaction{
     NSLog(@"buyProduct return: %@", transaction.payment.productIdentifier);
 }
+    
+- (void)deleteUserCallback:(BOOL)isSuccess {
+    NSLog(@"deleteUserCallback %d",isSuccess);
+}
+
+
 
 @end
