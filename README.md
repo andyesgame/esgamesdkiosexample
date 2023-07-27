@@ -175,7 +175,10 @@ ESGame will open Login view if user was not login in the past, or let user login
 	
 	-(void)logout
 Let user log-out.
-- In-app purchase:
+
+
+## In-app purchase:
+
   Use IAPManager class
  + Step 1: On list products screen need to display
   - Import "IAPManager.h"
