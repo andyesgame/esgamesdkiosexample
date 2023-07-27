@@ -181,57 +181,58 @@ Let user log-out.
   - Import "IAPManager.h"
   - Fetch products from iTunesConnect to display UI:
   
-      - (void)viewDidLoad {
-            [super viewDidLoad];
-        
-            self.products = [[NSMutableArray alloc] init];
-    
-            NSMutableArray * ids = [[NSMutableArray alloc] init];
-            [ids addObject:@"com.userjoy.sgc.vinn_yuanbao06"];
-            [ids addObject:@"com.userjoy.sgc.vinn_yuanbao02"];
-            [ids addObject:@"com.userjoy.sgc.vinn_yuanbao07"];
-            [IAPManager.shared configProductIds:ids];
-            [IAPManager.shared setParmamsIfNeed:@"1" :@"123" :@""];
+          - (void)viewDidLoad {
+                [super viewDidLoad];
             
-            __weak ListItemsViewController * weakSelf = self ;
-            [IAPManager.shared fetchAvailableProducts:^(NSArray<SKProduct *> * products) {
-                [weakSelf.products addObjectsFromArray:products];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [weakSelf bindDataToItem];
-                });
+                self.products = [[NSMutableArray alloc] init];
+        
+                NSMutableArray * ids = [[NSMutableArray alloc] init];
+                [ids addObject:@"com.userjoy.sgc.vinn_yuanbao06"];
+                [ids addObject:@"com.userjoy.sgc.vinn_yuanbao02"];
+                [ids addObject:@"com.userjoy.sgc.vinn_yuanbao07"];
+                [IAPManager.shared configProductIds:ids];
+                [IAPManager.shared setParmamsIfNeed:@"1" :@"123" :@""];
                 
-            }];
-    
-    }
+                __weak ListItemsViewController * weakSelf = self ;
+                [IAPManager.shared fetchAvailableProducts:^(NSArray<SKProduct *> * products) {
+                    [weakSelf.products addObjectsFromArray:products];
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [weakSelf bindDataToItem];
+                    });
+                    
+                }];
+        
+        }
    
    - Select to buy product item:
 
 		- conform IAPDelegate:
         
-            @interface ListItemsViewController : UIViewController<IAPDelegate>
-            
-            @end
+                @interface ListItemsViewController : UIViewController<IAPDelegate>
+                
+                @end
             
         - call function "purchase" when click to item at "index":
         
-            -(void)didTapItem: int index {
-                
-                SKProduct * p = self.products[index];
-                
-                [IAPManager.shared purchase:p];
-            }
+                -(void)didTapItem: int index {
+                    
+                    SKProduct * p = self.products[index];
+                    
+                    [IAPManager.shared purchase:p];
+                }
         - Implement IAPDelegate functions:
         
-            -(void)paymentSuccess:(SKPaymentTransaction*)transaction{
-            }
-            
-            -(void)paymentDisabled {
-            
-            }
-            
-            -(void)paymentCompletedRestore {
-            
-            }
+                -(void)paymentSuccess:(SKPaymentTransaction*)transaction{
+                
+                }
+                
+                -(void)paymentDisabled {
+                
+                }
+                
+                -(void)paymentCompletedRestore {
+                
+                }
         
             
 |Property               |Type                          |Description                         |
