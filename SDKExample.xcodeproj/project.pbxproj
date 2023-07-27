@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A70D5EE4767FCB75FCDFA98A /* Pods_SDKExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF3BEB06AEAE0500F26049B4 /* Pods_SDKExample.framework */; };
+		F50695A32A653D10007F4256 /* ListItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F50695A12A653D0F007F4256 /* ListItemsViewController.m */; };
+		F50695A42A653D10007F4256 /* ListItemsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50695A22A653D0F007F4256 /* ListItemsViewController.xib */; };
+		F50695A92A653DA9007F4256 /* ProductItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F50695A72A653DA9007F4256 /* ProductItemCell.m */; };
+		F50695AA2A653DA9007F4256 /* ProductItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50695A82A653DA9007F4256 /* ProductItemCell.xib */; };
+		F50695AD2A654FA4007F4256 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = F50695AC2A654FA4007F4256 /* Product.m */; };
 		F5B6B57C280E936C006B1462 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B6B57B280E936C006B1462 /* AppDelegate.m */; };
 		F5B6B57F280E936C006B1462 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B6B57E280E936C006B1462 /* SceneDelegate.m */; };
 		F5B6B582280E936C006B1462 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B6B581280E936C006B1462 /* ViewController.m */; };
@@ -22,6 +27,14 @@
 /* Begin PBXFileReference section */
 		7CD0BF4B515D06442596953B /* Pods-SDKExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKExample.release.xcconfig"; path = "Target Support Files/Pods-SDKExample/Pods-SDKExample.release.xcconfig"; sourceTree = "<group>"; };
 		B953F7CB65588527075C3A96 /* Pods-SDKExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKExample.debug.xcconfig"; path = "Target Support Files/Pods-SDKExample/Pods-SDKExample.debug.xcconfig"; sourceTree = "<group>"; };
+		F50695A02A653D0F007F4256 /* ListItemsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListItemsViewController.h; sourceTree = "<group>"; };
+		F50695A12A653D0F007F4256 /* ListItemsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListItemsViewController.m; sourceTree = "<group>"; };
+		F50695A22A653D0F007F4256 /* ListItemsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListItemsViewController.xib; sourceTree = "<group>"; };
+		F50695A62A653DA9007F4256 /* ProductItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductItemCell.h; sourceTree = "<group>"; };
+		F50695A72A653DA9007F4256 /* ProductItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductItemCell.m; sourceTree = "<group>"; };
+		F50695A82A653DA9007F4256 /* ProductItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductItemCell.xib; sourceTree = "<group>"; };
+		F50695AB2A654FA4007F4256 /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		F50695AC2A654FA4007F4256 /* Product.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		F55AF70C286C44C000691DB0 /* SDKExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SDKExample.entitlements; sourceTree = "<group>"; };
 		F5B6B577280E936C006B1462 /* SDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B6B57A280E936C006B1462 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +82,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F50695A52A653D68007F4256 /* ListItemVC */ = {
+			isa = PBXGroup;
+			children = (
+				F50695A02A653D0F007F4256 /* ListItemsViewController.h */,
+				F50695A12A653D0F007F4256 /* ListItemsViewController.m */,
+				F50695A22A653D0F007F4256 /* ListItemsViewController.xib */,
+				F50695A62A653DA9007F4256 /* ProductItemCell.h */,
+				F50695A72A653DA9007F4256 /* ProductItemCell.m */,
+				F50695A82A653DA9007F4256 /* ProductItemCell.xib */,
+				F50695AB2A654FA4007F4256 /* Product.h */,
+				F50695AC2A654FA4007F4256 /* Product.m */,
+			);
+			path = ListItemVC;
+			sourceTree = "<group>";
+		};
 		F5B6B56E280E936C006B1462 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +128,7 @@
 				F5B6B580280E936C006B1462 /* ViewController.h */,
 				F5B6B581280E936C006B1462 /* ViewController.m */,
 				F5B6B583280E936C006B1462 /* Main.storyboard */,
+				F50695A52A653D68007F4256 /* ListItemVC */,
 				F5B6B586280E936F006B1462 /* Assets.xcassets */,
 				F5B6B588280E936F006B1462 /* LaunchScreen.storyboard */,
 				F5B6B58B280E936F006B1462 /* Info.plist */,
@@ -168,9 +197,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50695AA2A653DA9007F4256 /* ProductItemCell.xib in Resources */,
 				F5B6B58A280E936F006B1462 /* LaunchScreen.storyboard in Resources */,
 				F5B6B587280E936F006B1462 /* Assets.xcassets in Resources */,
 				F5B6B596280EBA81006B1462 /* GoogleService-Info.plist in Resources */,
+				F50695A42A653D10007F4256 /* ListItemsViewController.xib in Resources */,
 				F5B6B585280E936C006B1462 /* Main.storyboard in Resources */,
 				F5B6B595280EBA81006B1462 /* es_property.plist in Resources */,
 			);
@@ -242,7 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50695AD2A654FA4007F4256 /* Product.m in Sources */,
+				F50695A92A653DA9007F4256 /* ProductItemCell.m in Sources */,
 				F5B6B582280E936C006B1462 /* ViewController.m in Sources */,
+				F50695A32A653D10007F4256 /* ListItemsViewController.m in Sources */,
 				F5B6B57C280E936C006B1462 /* AppDelegate.m in Sources */,
 				F5B6B58D280E936F006B1462 /* main.m in Sources */,
 				F5B6B57F280E936C006B1462 /* SceneDelegate.m in Sources */,
@@ -405,6 +439,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -442,6 +477,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

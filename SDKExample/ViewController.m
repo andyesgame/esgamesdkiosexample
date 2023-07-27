@@ -1,6 +1,7 @@
 #import "ViewController.h"
 #import "ESGameSDK.h"
 #import "SdkDelegate.h"
+#import "ListItemsViewController.h"
 
 @interface ViewController ()
 @end
@@ -35,20 +36,19 @@
 }
 
 - (IBAction)btnBuyItem:(id)sender {
-  ESGameSDK *esgameSdk = [ESGameSDK sharedObject];
-  NSArray *products = [esgameSdk getListProductId];
-  
-  if ((int)[products count] > 0) {
-      
-      NSString *productId = @"1";
-    NSString *serverId = @"1";
-    NSString *playerId = @"123";
-    NSString *extraData = @"";
+//  ESGameSDK *esgameSdk = [ESGameSDK sharedObject];
+//  NSArray *products = [esgameSdk getListProductId];
+//  
+//    NSString *productId = @"1";
+//    NSString *serverId = @"1";
+//    NSString *playerId = @"123";
+//    NSString *extraData = @"";
+//    
+//    [esgameSdk buyProduct:productId :serverId :playerId :extraData :self];
     
-    [esgameSdk buyProduct:productId :serverId :playerId :extraData :self];
-  } else {
-    NSLog(@"productId not found");
-  }
+    ListItemsViewController * vc = [[ListItemsViewController alloc] initWithNibName:@"ListItemsViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 
