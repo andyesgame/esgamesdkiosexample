@@ -180,8 +180,9 @@ Let user log-out.
  + Step 1: On list products screen need to display
   - Import "IAPManager.h"
   - Fetch products from iTunesConnect to display UI:
+  
       - (void)viewDidLoad {
-        [super viewDidLoad];
+            [super viewDidLoad];
         
             self.products = [[NSMutableArray alloc] init];
     
@@ -206,10 +207,13 @@ Let user log-out.
    - Select to buy product item:
 
 		- conform IAPDelegate:
+        
             @interface ListItemsViewController : UIViewController<IAPDelegate>
+            
             @end
             
         - call function "purchase" when click to item at "index":
+        
             -(void)didTapItem: int index {
                 
                 SKProduct * p = self.products[index];
@@ -217,12 +221,16 @@ Let user log-out.
                 [IAPManager.shared purchase:p];
             }
         - Implement IAPDelegate functions:
+        
             -(void)paymentSuccess:(SKPaymentTransaction*)transaction{
             }
             
             -(void)paymentDisabled {
+            
             }
+            
             -(void)paymentCompletedRestore {
+            
             }
         
             
