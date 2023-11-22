@@ -4,6 +4,7 @@ platform :ios, '13.0'
 
 target 'SDKExample' do
   use_frameworks!
+  pod 'AppsFlyerFramework'
   pod 'ESSDK', :path => '../sdk/' 
   post_install do |installer|
       installer.generated_projects.each do |project|

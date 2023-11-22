@@ -6,10 +6,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IAPManager.h"
 @import ESSDK;
 
-@interface ListItemsViewController : UIViewController<SdkDelegate, IAPDelegate>
+@interface ListItemsViewController : UIViewController<SdkDelegate>
 @property (weak, nonatomic) IBOutlet UIStackView *stvContent;
 @property (strong, nonatomic) NSMutableArray * products;
 

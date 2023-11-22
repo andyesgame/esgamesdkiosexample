@@ -60,6 +60,9 @@
     ],
     "Firebase/Messaging": [
       "8.1.1"
+    ],
+    "KeychainItemWrapper": [
+      "~> 1.2"
     ]
   }
 }

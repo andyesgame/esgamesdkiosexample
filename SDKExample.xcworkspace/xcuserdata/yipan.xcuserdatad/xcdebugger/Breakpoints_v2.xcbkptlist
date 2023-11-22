@@ -14,10 +14,218 @@
             filePath = "../sdk/ESSDK/Classes/LoginAppleFlow.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "213"
-            endingLineNumber = "213"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
             landmarkName = "-login:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C9C55701-CEB1-46D5-BAAD-08D6F6ABAA38"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SDKExample/ListItemVC/ListItemsViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "-didTapItem:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B243F6E1-0F1E-48BD-91C3-C3BBE98646AF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../sdk/ESSDK/Classes/IAPManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "-purchase:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B243F6E1-0F1E-48BD-91C3-C3BBE98646AF - a6c8e64e042331b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[IAPManager processPurchase:]"
+                  moduleName = "SDKExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/esgame/sdk/ESSDK/Classes/IAPManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "B243F6E1-0F1E-48BD-91C3-C3BBE98646AF - e800ce15aba9211a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[IAPManager purchase:]"
+                  moduleName = "SDKExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/esgame/sdk/ESSDK/Classes/IAPManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "128">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D78583C9-0FE6-41C4-99D7-806BA22B5CDF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../sdk/ESSDK/Classes/IAPManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "-checkBlockedPayment:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D78583C9-0FE6-41C4-99D7-806BA22B5CDF - 88b4a7e0108050f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__34-[IAPManager checkBlockedPayment:]_block_invoke"
+                  moduleName = "SDKExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/esgame/sdk/ESSDK/Classes/IAPManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "185"
+                  endingLineNumber = "185"
+                  offsetFromSymbolStart = "567">
+               </Location>
+               <Location
+                  uuid = "D78583C9-0FE6-41C4-99D7-806BA22B5CDF - 88b4a7e0108050f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__34-[IAPManager checkBlockedPayment:]_block_invoke"
+                  moduleName = "SDKExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/esgame/sdk/ESSDK/Classes/IAPManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "185"
+                  endingLineNumber = "185"
+                  offsetFromSymbolStart = "532">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BB77CA7A-EF18-40E8-803E-6E03E1F1BFE9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../sdk/ESSDK/Classes/IAPManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "-purchase:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BB77CA7A-EF18-40E8-803E-6E03E1F1BFE9 - e800ce15aba9217f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[IAPManager purchase:]"
+                  moduleName = "SDKExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/esgame/sdk/ESSDK/Classes/IAPManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  uuid = "BB77CA7A-EF18-40E8-803E-6E03E1F1BFE9 - e800ce15aba9219e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[IAPManager purchase:]"
+                  moduleName = "SDKExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/esgame/sdk/ESSDK/Classes/IAPManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "393A86A1-AB1E-478A-ABD4-A99066AC2A6C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../sdk/ESSDK/Classes/IAPManager.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "-checkBlockedPayment:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "393A86A1-AB1E-478A-ABD4-A99066AC2A6C - 8060d4edb303b50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__34-[IAPManager checkBlockedPayment:]_block_invoke_2"
+                  moduleName = "SDKExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/esgame/sdk/ESSDK/Classes/IAPManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "169"
+                  endingLineNumber = "169"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "393A86A1-AB1E-478A-ABD4-A99066AC2A6C - 88b4a7e0108056e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__34-[IAPManager checkBlockedPayment:]_block_invoke"
+                  moduleName = "SDKExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/esgame/sdk/ESSDK/Classes/IAPManager.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "169"
+                  endingLineNumber = "169"
+                  offsetFromSymbolStart = "127">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

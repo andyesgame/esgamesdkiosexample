@@ -36,18 +36,18 @@
 }
 
 - (IBAction)btnBuyItem:(id)sender {
-//  ESGameSDK *esgameSdk = [ESGameSDK sharedObject];
-//  NSArray *products = [esgameSdk getListProductId];
-//  
-//    NSString *productId = @"1";
-//    NSString *serverId = @"1";
-//    NSString *playerId = @"123";
-//    NSString *extraData = @"";
-//    
-//    [esgameSdk buyProduct:productId :serverId :playerId :extraData :self];
+  ESGameSDK *esgameSdk = [ESGameSDK sharedObject];
+  NSArray *products = [esgameSdk getListProductId];
+  
+    NSString *productId = @"com.userjoy.sgc.vinn_yuanbao06";
+    NSString *serverId = @"1";
+    NSString *playerId = @"123";
+    NSString *extraData = @"";
     
-    ListItemsViewController * vc = [[ListItemsViewController alloc] initWithNibName:@"ListItemsViewController" bundle:nil];
-    [self.navigationController pushViewController:vc animated:YES];
+    [esgameSdk buyProduct:productId :serverId :playerId :extraData :self];
+    
+//    ListItemsViewController * vc = [[ListItemsViewController alloc] initWithNibName:@"ListItemsViewController" bundle:nil];
+//    [self.navigationController pushViewController:vc animated:YES];
     
 }
 
@@ -71,6 +71,8 @@
     NSLog(@"deleteUserCallback %d",isSuccess);
 }
 
-
+- (void)onFireBaseTokenChange:(nonnull NSString *)token {
+    NSLog(@"Token %@", token);
+}
 
 @end
